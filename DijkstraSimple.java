@@ -26,8 +26,10 @@ public class DijkstraSimple {
 
     public static void main(String[] args) {
         int[][] graph = {
-            {0, 4},
-            {0, 0}
+            {0, 3, 0, 7},
+            {0, 0, 1, 0},
+            {0, 0, 0, 2},
+            {0, 0, 0, 0},
         };
          long  start=System.nanoTime(); 
 
@@ -38,7 +40,9 @@ System.out.println();
 System.out.println("Time taken for execution="+Time); 
     }
 }
-//output:
+//output: 
 // Distance from 0 to 0 is 0
-// Distance from 0 to 1 is 4
-// Time taken for execution=40780900
+// Distance from 0 to 1 is 3
+// Distance from 0 to 2 is 4
+// Distance from 0 to 3 is 5
+// Time taken for execution=28426800
